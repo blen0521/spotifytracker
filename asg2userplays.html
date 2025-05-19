@@ -4,6 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>User Plays - Spotify + Last.fm Tracker</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Plays - Spotify + Last.fm Tracker</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <style>
     body {
@@ -45,22 +51,20 @@
 </header>
 
 <section>
-  <div class="card">
+  <div class="card" id="top-artists">
     <h3>Top Artist Scrobbles</h3>
-    <p>See detailed stats about your most played artists using Last.fm data.</p>
-    <p><strong>API Used:</strong> Last.fm API – <code>/2.0/?method=user.gettopartists</code></p>
+    <div class="content">Loading top artists...</div>
   </div>
 
-  <div class="card">
+  <div class="card" id="weekly-chart">
     <h3>Weekly Track Chart</h3>
-    <p>Explore your weekly track chart and music listening trends.</p>
-    <p><strong>API Used:</strong> Last.fm API – <code>/2.0/?method=user.getweeklytrackchart</code></p>
+    <div class="content">Loading weekly chart...</div>
   </div>
 </section>
 
 <footer>
   <p>&copy; 2025 Spotify Tracker</p>
 </footer>
-
+  <script type="module" src="userplays.js"></script>
 </body>
 </html>
